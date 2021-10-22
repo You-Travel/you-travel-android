@@ -13,6 +13,10 @@
         <action
             android:id="@+id/action_navFragment_to_introFragment"
             app:destination="@id/introFragment" />
+        <action
+            android:id="@+id/action_navFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+
     </fragment>
 
     <fragment
@@ -23,6 +27,9 @@
             android:id="@+id/action_introFragment_to_navFragment"
             app:destination="@id/navFragment" />
     </fragment>
-
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="travel.you.core.HomeFragment"
+        android:label="HomeFragment" />
 
 </navigation>
