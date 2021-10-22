@@ -14,7 +14,7 @@
         <!-- Customize your theme here. -->
     </style>
 
-    <style name="Theme.YouTravel" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+    <style name="Theme.YouTravel" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/main_purple</item>
         <!-- Secondary brand color. -->
