@@ -7,10 +7,28 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical">
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
+    <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        android:layout_margin="25dp"
+        android:background="@drawable/round_corners"
+        android:padding="5dp">
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="10"
+            android:maxLines="1"
+            android:backgroundTint="#00000000"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/ic_search"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
 
     <ScrollView
         android:layout_width="match_parent"
@@ -63,7 +81,7 @@
                         android:id="@+id/img_map1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="30dp"
+                        android:layout_marginTop="60dp"
                         android:src="@drawable/ic_maps_mini"
                         app:layout_constraintTop_toBottomOf="@id/txt_our_temp"
                         app:layout_constraintStart_toStartOf="parent"/>
@@ -108,7 +126,7 @@
                             android:id="@+id/img_map2"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="30dp"
+                            android:layout_marginTop="60dp"
                             android:src="@drawable/ic_maps_mini"
                             app:layout_constraintTop_toBottomOf="@id/txt_target_temp"
                             app:layout_constraintStart_toStartOf="parent"/>
@@ -174,9 +192,91 @@
                     android:layout_columnWeight="1"
                     android:layout_rowWeight="1"/>
 
+                <include
+                    layout="@layout/card_menu"
+                    android:layout_margin="10dp"
+                    tools:ignore="IncludeLayoutParam"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"/>
 
+                <include
+                    layout="@layout/card_menu"
+                    android:layout_margin="10dp"
+                    tools:ignore="IncludeLayoutParam"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"/>
+
+                <include
+                    layout="@layout/card_menu"
+                    android:layout_margin="10dp"
+                    tools:ignore="IncludeLayoutParam"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"/>
 
             </GridLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginVertical="20dp"
+                android:layout_marginHorizontal="20dp"
+                android:background="#aaa"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                app:cardCornerRadius="4dp"
+                android:layout_gravity="start|bottom"
+                android:layout_margin="20dp">
+
+                <ImageView
+                    android:src="@drawable/bus"
+                    android:scaleType="centerCrop"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+                <com.google.android.material.chip.Chip
+                    android:elevation="10dp"
+                    android:text="Аренда автомобилей"
+                    android:textSize="20sp"
+                    android:background="@color/main_green"
+                    android:layout_gravity="bottom"
+                    android:backgroundTint="@color/active_button_green"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                app:cardCornerRadius="4dp"
+                android:layout_gravity="start|bottom"
+                android:layout_margin="20dp">
+
+                <ImageView
+                    android:src="@drawable/bus"
+                    android:scaleType="centerCrop"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+                <com.google.android.material.chip.Chip
+                    android:elevation="10dp"
+                    android:text="Билеты на автобус"
+                    android:textSize="20sp"
+                    android:background="@color/main_green"
+                    android:layout_gravity="bottom"
+                    android:backgroundTint="@color/active_button_green"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+            </androidx.cardview.widget.CardView>
 
         </androidx.appcompat.widget.LinearLayoutCompat>
 
