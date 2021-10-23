@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 
 import travel.you.databinding.FragmentMenuBinding
@@ -18,6 +19,7 @@ class MenuFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         binding = FragmentMenuBinding.inflate(inflater)
+        (activity!! as AppCompatActivity).setSupportActionBar(binding.toolbar)
         return binding.root
     }
 
