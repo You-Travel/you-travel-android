@@ -15,7 +15,7 @@ class NavFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        findNavController().navigate(R.id.action_navFragment_to_introFragment)
+        findNavController().navigate(R.id.action_navFragment_to_homeFragment)
         return super.onCreateView(inflater, container, savedInstanceState)
     }
 

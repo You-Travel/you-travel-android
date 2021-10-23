@@ -5,8 +5,12 @@
       <map>
         <entry key="..\:/Users/NHTHS/Desktop/you-travel-android/app/src/main/res/layout/activity_main.xml" value="0.14375" />
         <entry key="..\:/Users/NHTHS/Desktop/you-travel-android/app/src/main/res/layout/activity_splash.xml" value="0.264" />
+        <entry key="..\:/Users/NHTHS/Desktop/you-travel-android/app/src/main/res/layout/fragment_home.xml" value="0.275" />
         <entry key="..\:/Users/NHTHS/Desktop/you-travel-android/app/src/main/res/layout/fragment_intro.xml" value="0.264" />
+        <entry key="..\:/Users/NHTHS/Desktop/you-travel-android/app/src/main/res/layout/fragment_map.xml" value="0.275" />
         <entry key="..\:/Users/NHTHS/Desktop/you-travel-android/app/src/main/res/layout/fragment_menu.xml" value="0.275" />
+        <entry key="..\:/Users/NHTHS/Desktop/you-travel-android/app/src/main/res/layout/fragment_profile.xml" value="0.275" />
+        <entry key="..\:/Users/NHTHS/Desktop/you-travel-android/app/src/main/res/layout/fragment_trip.xml" value="0.275" />
         <entry key="..\:/Users/NHTHS/Desktop/you-travel-android/app/src/main/res/menu/menu_home_bottom_navigation.xml" value="0.275" />
       </map>
     </option>

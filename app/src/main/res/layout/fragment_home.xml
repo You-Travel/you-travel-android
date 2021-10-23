@@ -5,7 +5,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <androidx.fragment.app.FragmentContainerView
-        android:id="@+id/nav_host_fragment"
+        android:id="@+id/fragment_menu_nav_host"
+        class="androidx.navigation.fragment.NavHostFragment"
+        app:navGraph="@navigation/navigation_main"
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"

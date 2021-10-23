@@ -2,22 +2,22 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/page_1"
+        android:id="@+id/tripFragment"
         android:enabled="true"
         android:icon="@drawable/ic_launcher_foreground"
         android:title="Создать"/>
     <item
-        android:id="@+id/page_2"
+        android:id="@+id/menuFragment"
         android:enabled="true"
         android:icon="@drawable/ic_launcher_foreground"
         android:title="Главная"/>
     <item
-        android:id="@+id/page_3"
+        android:id="@+id/mapFragment"
         android:enabled="true"
         android:icon="@drawable/ic_launcher_foreground"
         android:title="Карта"/>
     <item
-        android:id="@+id/page_4"
+        android:id="@+id/profileFragment"
         android:enabled="true"
         android:icon="@drawable/ic_launcher_foreground"
         android:title="Профиль"/>
