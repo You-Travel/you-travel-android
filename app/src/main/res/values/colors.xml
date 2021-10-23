@@ -3,4 +3,10 @@
     <color name="main_purple">#9287E2</color>
     <color name="main_green">#B7E95A</color>
     <color name="main_white">#FFFFFF</color>
+    <color name="active_button_purple">#7768E3</color>
+    <color name="active_button_green">#C8E98A</color>
+    <color name="map_half_interest_button_green">#EDFFCC</color>
+    <color name="not_active_button_green">#E6F5C9</color>
+    <color name="card_v">#F1F3ED</color>
+    <color name="search_gray">#E5E5E5</color>
 </resources>

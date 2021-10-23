@@ -19,7 +19,8 @@ class MenuFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         binding = FragmentMenuBinding.inflate(inflater)
-        (activity!! as AppCompatActivity).setSupportActionBar(binding.toolbar)
+        (activity as AppCompatActivity)
+            .setSupportActionBar(binding.toolbar)
         return binding.root
     }
 

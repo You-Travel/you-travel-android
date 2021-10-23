@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/NHTHS/Desktop/you-travel-android/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2911458333333333" />
         <entry key="..\:/Users/NHTHS/Desktop/you-travel-android/app/src/main/res/drawable/ic_chat.xml" value="0.2911458333333333" />
         <entry key="..\:/Users/NHTHS/Desktop/you-travel-android/app/src/main/res/drawable/ic_create.xml" value="0.2911458333333333" />
         <entry key="..\:/Users/NHTHS/Desktop/you-travel-android/app/src/main/res/drawable/ic_cross.xml" value="0.2911458333333333" />
@@ -12,6 +13,8 @@
         <entry key="..\:/Users/NHTHS/Desktop/you-travel-android/app/src/main/res/drawable/ic_menu_maps.xml" value="0.2911458333333333" />
         <entry key="..\:/Users/NHTHS/Desktop/you-travel-android/app/src/main/res/drawable/ic_menu_profile.xml" value="0.2911458333333333" />
         <entry key="..\:/Users/NHTHS/Desktop/you-travel-android/app/src/main/res/drawable/ic_navigation.xml" value="0.2911458333333333" />
+        <entry key="..\:/Users/NHTHS/Desktop/you-travel-android/app/src/main/res/drawable/ic_splash.xml" value="0.2911458333333333" />
+        <entry key="..\:/Users/NHTHS/Desktop/you-travel-android/app/src/main/res/drawable/round_corners.xml" value="0.25833333333333336" />
         <entry key="..\:/Users/NHTHS/Desktop/you-travel-android/app/src/main/res/font-v26/fonts.xml" value="0.3" />
         <entry key="..\:/Users/NHTHS/Desktop/you-travel-android/app/src/main/res/font/fonts.xml" value="0.1" />
         <entry key="..\:/Users/NHTHS/Desktop/you-travel-android/app/src/main/res/layout/activity_main.xml" value="0.14375" />
@@ -24,6 +27,8 @@
         <entry key="..\:/Users/NHTHS/Desktop/you-travel-android/app/src/main/res/layout/fragment_profile.xml" value="0.275" />
         <entry key="..\:/Users/NHTHS/Desktop/you-travel-android/app/src/main/res/layout/fragment_trip.xml" value="0.275" />
         <entry key="..\:/Users/NHTHS/Desktop/you-travel-android/app/src/main/res/menu/menu_home_bottom_navigation.xml" value="0.275" />
+        <entry key="..\:/Users/NHTHS/Desktop/you-travel-android/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.2911458333333333" />
+        <entry key="..\:/Users/NHTHS/Desktop/you-travel-android/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.2911458333333333" />
       </map>
     </option>
   </component>
