@@ -4,10 +4,10 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentPagerAdapter
-import androidx.fragment.app.FragmentStatePagerAdapter
 import androidx.navigation.fragment.findNavController
 import travel.you.R
 import travel.you.databinding.FragmentPlanningTripBinding
@@ -24,13 +24,14 @@ class PlanningTripFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         binding = FragmentPlanningTripBinding.inflate(inflater)
-        tripPagerAdapter = TripPagerAdapter(fragmentManager!!)
+        tripPagerAdapter = TripPagerAdapter(childFragmentManager)
         if (binding.pager.adapter == null) {
             binding.pager.adapter = tripPagerAdapter
         }
         binding.tabLayout.setupWithViewPager(binding.pager)
 
         binding.btnCreateTrip.setOnClickListener {
+            //Toast.makeText(context, "Когда - нибудь потом...", Toast.LENGTH_LONG)
             findNavController().navigate(R.id.action_planningTripFragment_to_createNewTripFragment)
         }
 
@@ -38,6 +39,8 @@ class PlanningTripFragment : Fragment() {
     }
 
     class TripPagerAdapter(fm: FragmentManager) : FragmentPagerAdapter(fm, BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT) {
+
+
 
         override fun getCount(): Int  = 2
 

@@ -8,11 +8,13 @@
     <ImageButton
         android:id="@+id/btn_create_trip"
         android:src="@drawable/ic_plus"
+        android:clickable="true"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:background="#00000000"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintEnd_toEndOf="parent"
+        android:focusable="true" />
 
     <TextView
         android:id="@+id/txt_planning"
