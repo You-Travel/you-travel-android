@@ -23,8 +23,7 @@ class MenuFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         binding = FragmentMenuBinding.inflate(inflater)
-
-
+        
         return binding.root
     }
 
