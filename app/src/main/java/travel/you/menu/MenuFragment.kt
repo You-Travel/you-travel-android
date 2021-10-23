@@ -2,20 +2,16 @@ package travel.you.menu
 
 import android.os.Bundle
 import android.view.*
-import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
+import androidx.lifecycle.ViewModelProviders
 
 import travel.you.databinding.FragmentMenuBinding
-
-import android.view.MenuInflater
-import androidx.appcompat.widget.SearchView
-import androidx.appcompat.widget.SearchView.OnQueryTextListener
-import androidx.appcompat.widget.Toolbar
-import travel.you.R
 
 class MenuFragment : Fragment() {
 
     private lateinit var binding: FragmentMenuBinding
+
+    private lateinit var viewModel: MenuViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -23,7 +19,8 @@ class MenuFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         binding = FragmentMenuBinding.inflate(inflater)
-        
+        viewModel = ViewModelProviders.of(this).get(MenuViewModel::class.java)
+
         return binding.root
     }
 
