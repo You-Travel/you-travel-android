@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/navigation_home"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/navigation_home"
     app:startDestination="@id/menuFragment">
 
     <fragment
@@ -30,6 +31,15 @@
     <fragment
         android:id="@+id/createNewTripFragment"
         android:name="travel.you.trip.CreateNewTripFragment"
-        android:label="CreateNewTripFragment" />
+        android:label="CreateNewTripFragment" >
+        <action
+                android:id="@+id/action_createNewTripFragment_to_variantsFragment"
+                app:destination="@id/variantsFragment" />
+    </fragment>
+    <fragment
+            android:id="@+id/variantsFragment"
+            android:name="travel.you.variants.VariantsFragment"
+            android:label="fragment_variants"
+            tools:layout="@layout/fragment_variants" />
 
 </navigation>
