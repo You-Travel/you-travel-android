@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.appcompat.widget.LinearLayoutCompat
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -40,7 +41,8 @@
                     <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/weather_thunder">
+                        android:background="@drawable/weather_thunder"
+                        android:foreground="#33000000">
 
                     <TextView
                         android:id="@+id/txt_our_temp"
@@ -84,7 +86,8 @@
                     <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/weather_sunny">
+                        android:background="@drawable/weather_sunny"
+                        android:foreground="#33000000">
 
                         <TextView
                             android:id="@+id/txt_target_temp"
@@ -143,8 +146,33 @@
             </androidx.appcompat.widget.LinearLayoutCompat>
 
             <GridLayout
+                android:columnCount="2"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="10dp"
+                android:orientation="horizontal">
+
+                <include
+                    layout="@layout/card_menu"
+                    android:layout_margin="10dp"
+                    tools:ignore="IncludeLayoutParam"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"/>
+
+                <include
+                    layout="@layout/card_menu"
+                    android:layout_margin="10dp"
+                    tools:ignore="IncludeLayoutParam"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"/>
+
+                <include
+                    layout="@layout/card_menu"
+                    android:layout_margin="10dp"
+                    tools:ignore="IncludeLayoutParam"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"/>
 
 
 
