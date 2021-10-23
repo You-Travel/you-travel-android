@@ -66,6 +66,7 @@ dependencies {
     implementation "org.koin:koin-android-viewmodel:2.0.1"
 
     implementation 'com.github.bumptech.glide:glide:4.12.0'
+    implementation 'androidx.databinding:baseLibrary:3.2.0-alpha11'
     annotationProcessor 'com.github.bumptech.glide:compiler:4.12.0'
 
     //implementation "io.insert-koin:koin-android:2.0.1"
