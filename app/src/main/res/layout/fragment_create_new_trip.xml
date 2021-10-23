@@ -8,7 +8,6 @@
     <ImageView
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:src=""
             app:srcCompat="@drawable/ic_splash"
             app:layout_constraintBottom_toTopOf="@+id/input_budget"
             app:layout_constraintEnd_toEndOf="parent"
@@ -28,7 +27,8 @@
             android:inputType="number"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintBottom_toTopOf="@+id/input_count_people"
-            android:layout_marginBottom="32dp" />
+            android:layout_marginBottom="32dp"
+            android:minHeight="48dp" />
 
     <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/input_count_people"
@@ -42,7 +42,8 @@
             android:layout_marginStart="8dp"
             android:hint="Введите количество человек"
             android:gravity="center"
-            android:inputType="number" />
+            android:inputType="number"
+            android:minHeight="48dp" />
 
     <com.google.android.material.button.MaterialButton
             android:text="Создать поездку"

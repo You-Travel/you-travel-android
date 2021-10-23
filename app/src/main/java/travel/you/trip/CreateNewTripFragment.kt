@@ -14,7 +14,7 @@ import travel.you.R
 class CreateNewTripFragment : Fragment() {
 
     private lateinit var binding: FragmentCreateNewTripBinding
-    private val viewModel: CreateNewTripViewModel by viewModel()
+    private val viewModel: CreateNewTripViewModel = CreateNewTripViewModel()
 
     override fun onCreateView(
         inflater: LayoutInflater,
