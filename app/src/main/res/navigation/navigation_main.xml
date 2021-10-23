@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/navigation_home"
     app:startDestination="@id/menuFragment">
 
     <fragment
-        android:id="@+id/tripFragment"
-        android:name="travel.you.trip.TripFragment"
-        android:label="TripFragment" />
+        android:id="@+id/planningTripFragment"
+        android:name="travel.you.trip.PlanningTripFragment"
+        android:label="PlanningTripFragment" >
+        <action
+            android:id="@+id/action_planningTripFragment_to_createNewTripFragment"
+            app:destination="@id/createNewTripFragment" />
+    </fragment>
 
     <fragment
         android:id="@+id/menuFragment"
@@ -24,5 +27,9 @@
         android:id="@+id/profileFragment"
         android:name="travel.you.profile.ProfileFragment"
         android:label="ProfileFragment" />
+    <fragment
+        android:id="@+id/createNewTripFragment"
+        android:name="travel.you.trip.CreateNewTripFragment"
+        android:label="CreateNewTripFragment" />
 
 </navigation>

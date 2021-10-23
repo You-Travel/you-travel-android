@@ -2,7 +2,7 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/tripFragment"
+        android:id="@+id/planningTripFragment"
         android:enabled="true"
         android:icon="@drawable/ic_create"
         android:title="Создать"/>
