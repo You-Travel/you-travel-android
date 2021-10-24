@@ -22,7 +22,11 @@
     <fragment
         android:id="@+id/mapFragment"
         android:name="travel.you.map.MapFragment"
-        android:label="MapFragment" />
+        android:label="MapFragment" >
+        <action
+            android:id="@+id/action_mapFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+    </fragment>
 
     <fragment
         android:id="@+id/profileFragment"
