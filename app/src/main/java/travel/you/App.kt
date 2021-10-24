@@ -7,6 +7,11 @@ import org.koin.core.context.startKoin
 
 class App : Application() {
 
+    companion object SERVER_URL {
+        var URL = "https://localhost:8080"
+        lateinit var app: App
+    }
+
     override fun onCreate() {
         super.onCreate()
         startKoin{

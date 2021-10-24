@@ -8,6 +8,7 @@ import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import retrofit2.http.GET
 import retrofit2.http.Path
+import travel.you.App
 import travel.you.util.Util
 
 class MenuViewModel() : ViewModel() {
@@ -16,7 +17,7 @@ class MenuViewModel() : ViewModel() {
 
     init {
         Retrofit.Builder()
-            .baseUrl(Util.URL)
+            .baseUrl(App.URL)
             .addConverterFactory(GsonConverterFactory.create())
             .build()
     }
