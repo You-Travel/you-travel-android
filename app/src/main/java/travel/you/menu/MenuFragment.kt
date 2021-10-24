@@ -9,7 +9,6 @@ import androidx.lifecycle.ViewModelProviders
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.target.CustomTarget
 import com.bumptech.glide.request.transition.Transition
-import travel.you.R
 import travel.you.databinding.CardMenuBinding
 
 import travel.you.databinding.FragmentMenuBinding
@@ -28,11 +27,15 @@ class MenuFragment : Fragment() {
         binding = FragmentMenuBinding.inflate(inflater)
         viewModel = ViewModelProviders.of(this).get(MenuViewModel::class.java)
 
-        var plases = listOf<String>("")
+        viewModel.places.observe(this, {
+            it.forEach {
+                var cardBinding = CardMenuBinding.inflate(LayoutInflater.from(context))
+                cardBinding.txtName.text = it.name
+            }
+        })
 
         for (i in 1..6) {
-            var cardBinding = CardMenuBinding.inflate(LayoutInflater.from(context))
-            cardBinding.txtName
+
         }
 
         Glide.with(this)
