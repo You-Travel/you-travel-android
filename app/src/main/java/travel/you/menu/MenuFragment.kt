@@ -9,9 +9,12 @@ import androidx.lifecycle.ViewModelProviders
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.target.CustomTarget
 import com.bumptech.glide.request.transition.Transition
+import travel.you.App
 import travel.you.databinding.CardMenuBinding
 
 import travel.you.databinding.FragmentMenuBinding
+
+import android.graphics.drawable.BitmapDrawable
 
 class MenuFragment : Fragment() {
 
@@ -31,28 +34,21 @@ class MenuFragment : Fragment() {
             it.forEach {
                 var cardBinding = CardMenuBinding.inflate(LayoutInflater.from(context))
                 cardBinding.txtName.text = it.name
+                cardBinding.rating.rating = ((it.rate) as Float)/10
+
+                Glide.with(this)
+                    .asBitmap()
+                    .load(App.URL + "/files/" + it.pic)
+                    .into(object : CustomTarget<Bitmap>(){
+                        override fun onResourceReady(resource: Bitmap, transition: Transition<in Bitmap>?) {
+                            cardBinding.container.background = BitmapDrawable(resources, resource)
+                        }
+                        override fun onLoadCleared(placeholder: Drawable?) {
+                        }
+                    })
+                binding.gridCards.addView(cardBinding.root)
             }
         })
-
-        for (i in 1..6) {
-
-        }
-
-        Glide.with(this)
-            .asBitmap()
-            .load("https://www.11zon.com/images/home_icons/home_android_icon.png")
-            .into(object : CustomTarget<Bitmap>(){
-                override fun onResourceReady(resource: Bitmap, transition: Transition<in Bitmap>?) {
-                    //binding..setImageBitmap(resource)
-                }
-                override fun onLoadCleared(placeholder: Drawable?) {
-                    // this is called when imageView is cleared on lifecycle call or for
-                    // some other reason.
-                    // if you are referencing the bitmap somewhere else too other than this imageView
-                    // clear it here as you can no longer have the bitmap
-                }
-            })
-
         return binding.root
     }
 
