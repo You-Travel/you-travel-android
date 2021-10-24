@@ -5,20 +5,42 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import travel.you.databinding.FragmentBookmarksBinding
+import androidx.lifecycle.Observer
+import androidx.navigation.fragment.findNavController
+import travel.you.databinding.FragmentCreateNewTripBinding
+import org.koin.android.viewmodel.ext.android.viewModel
+import travel.you.R
 
 class CreateNewTripFragment : Fragment() {
 
-    //private lateinit var binding: Fragment
+    private lateinit var binding: FragmentCreateNewTripBinding
+    private val viewModel: CreateNewTripViewModel = CreateNewTripViewModel()
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        //binding = FragmentBookmarksBinding.inflate(inflater)
-        //return binding.root
-        return null
+        binding = FragmentCreateNewTripBinding.inflate(inflater)
+        initObserverViewModel()
+        return binding.root
+    }
+
+    private fun initObserverViewModel() {
+        viewModel.createTrip.observe(viewLifecycleOwner, Observer {
+            openVariantsFragment();
+        })
+    }
+
+    private fun openVariantsFragment() {
+        val budget = binding.inputBudget.text.toString().toInt()
+        val countPeople = binding.inputCountPeople.text.toString().toInt()
+
+        val bundle = Bundle()
+        bundle.putInt("budget", budget)
+        bundle.putInt("countPeople", countPeople)
+
+        findNavController().navigate(R.id.action_createNewTripFragment_to_variantsFragment, bundle)
     }
 
 }
