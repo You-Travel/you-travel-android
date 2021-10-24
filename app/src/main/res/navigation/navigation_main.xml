@@ -40,6 +40,15 @@
             android:id="@+id/variantsFragment"
             android:name="travel.you.variants.VariantsFragment"
             android:label="fragment_variants"
-            tools:layout="@layout/fragment_variants" />
+            tools:layout="@layout/fragment_variants" >
+        <argument
+                android:name="budget"
+                app:argType="integer"
+                android:defaultValue="0" />
+        <argument
+                android:name="countPeople"
+                app:argType="integer"
+                android:defaultValue="1" />
+    </fragment>
 
 </navigation>
